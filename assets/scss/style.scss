@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800&display=swap');
+
+// Colours
+$dark-blue: #172339;
+$medium-blue: #49566d;
+$off-white: #f3ede7;
+$purple: #a060ff;
+$pink: #cb30e3;
+$orange: #ffa84e;
+
+// Fonts
+$font-stack:'Epilogue', sans-serif;
+
+// Text sizing
+$heading-xl: 5rem;
+$heading-l: 3rem;
+$heading-m: 1.1rem;
+$heading-s: 1rem;
+$quote: 1.3rem;
+$body: 1.1rem;
+$footer: 0.9rem;
+
+* {
+    font: $font-stack;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@mixin button($theme: $dark-blue) {
+    background: $theme;
+    color: #FAF8F6;
+    border-radius: 6px;
+    border: 1px solid $theme;
+    &:hover {
+        background: linear-gradient(135deg, #A060FF 0%, #CB30E3 49.21%, #FFA84E 100%);
+        border:none;
+    }
+}
+
+.secondary-button-default {
+    @include button;
+    background:none;
+}
+
