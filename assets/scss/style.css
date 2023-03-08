@@ -6,14 +6,33 @@
   box-sizing: border-box;
 }
 
-.secondary-button-default {
-  background: #172339;
-  color: #FAF8F6;
-  border-radius: 6px;
-  border: 1px solid #172339;
-  background: none;
+body {
+  padding: 1rem;
 }
-.secondary-button-default:hover {
-  background: linear-gradient(135deg, #A060FF 0%, #CB30E3 49.21%, #FFA84E 100%);
-  border: none;
+
+button {
+  background: #172339;
+  color: #faf8f6;
+  border-radius: 6px;
+  padding: 0.9rem 2rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: 1px solid #172339;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background: linear-gradient(135deg, #a060ff 0%, #cb30e3 49.21%, #ffa84e 100%);
+  border: 1px solid #ffffff;
+}
+
+.secondary-button {
+  background: none;
+  color: #172339;
+}
+.secondary-button:hover {
+  background: #172339;
+  color: #faf8f6;
 }/*# sourceMappingURL=style.css.map */
